@@ -1,98 +1,105 @@
-.jumbotron{
+.jumbotron {
   background-color: #96D5A8;
   height: 200px;
   animation-duration: 3s;
   animation-name: main;
-  animation-iteration-count: infinite;;
+  animation-iteration-count: infinite;
+  ;
 }
+
 @keyframes main {
   from {
     background-color: #E48AA1;
   }
-
   to {
-      background-color: #8AE4B4;
+    background-color: #8AE4B4;
   }
 }
 
-img{
+img {
   width: 200px;
   position: absolute;
 }
-#bat{
+
+#bat {
   max-width: 50px;
 }
-#title{
+
+#title {
   font-family: 'Merienda One', cursive;
-    font-size: 30px;
-    font-weight: bold;
-    animation-duration: 10s;
-    animation-name: ping;
-    animation-iteration-count: 1;
-    color: #E5711B;
-    text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  animation-duration: 10s;
+  animation-name: ping;
+  animation-iteration-count: 1;
+  color: #E5711B;
+  text-align: center;
 }
-h2{
-  color:#C2460C;
+
+h2 {
+  color: #C2460C;
 }
-h3{
-color:#2677E2;
+
+h3 {
+  color: #2677E2;
 }
+
 @keyframes ping {
   from {
     margin-left: 100%;
-
     width: 50%;
   }
-
   to {
     color: red;
   }
 }
-body{
-background-color: #D3A7B5;
 
-
-
+body {
+  background-color: #D3A7B5;
 }
-.well{
+
+.well {
   float: right;
   text-align: center;
-  width:760px;
-  border:  2px solid blue;
-  background-color: rgb(255,229,102,0.2);
+  width: 760px;
+  border: 2px solid blue;
+  background-color: rgb(255, 229, 102, 0.2);
   padding-left: 10px;
-
 }
-form{
+
+form {
   width: 200px;
 }
-.katikati{
+
+.katikati {
   margin-left: 260px;
 }
-#output{
+
+#output {
   display: none;
 }
-#play{
+
+#play {
   font-weight: bold;
   animation-duration: 2s;
   animation-name: head;
   animation-iteration-count: infinite;
-  width:200px;
+  width: 200px;
 }
+
 @keyframes head {
-  from{
-
-    color:red;
+  from {
+    color: red;
   }
-  to{
-
-    color:blue;
+  to {
+    color: blue;
   }
 }
-li{
+
+li {
   color: #DBE86C;
 }
-.list{
+
+.list {
   color: #3C7A44;
 }
