@@ -4,17 +4,19 @@
 function condition() {
   for (var count = 1; count <= countTonumber; count++) {
     if ((count % 3 == 0) && (count % 5 == 0)) {
-      outPut += 'pingpong';
+
+      $("ul#output").append("<li>"+'pingpong'+"</li>");
     } else if (count % 5 == 0) {
-      outPut += 'pong';
+
+      $("ul#output").append("<li>"+'pong'+"</li>");
     } else if (count % 3 == 0) {
-      outPut += 'ping';
+
+      $("ul#output").append("<li>"+'ping'+"</li>");
     } else {
-      outPut += count.toString();
+
+      $("ul#output").append("<li>"+count.toString()+"</li>");
     }
-    if (count != countTonumber) {
-      outPut += ',';
-    }
+
   }
 }
 
@@ -23,10 +25,15 @@ function condition() {
 
 $(document).ready(function(){
 $("form").submit(function(event){
+$("#output").text('');
 countTonumber=$("input#name").val();
 condition();
-$(".results").show();
-$(".output").text(outPut);
+
+$("#output").show();
+
+$("input#name").val("");
+
+
 event.preventDefault();
 });
 
