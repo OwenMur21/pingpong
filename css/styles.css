@@ -4,9 +4,24 @@
   animation-duration: 3s;
   animation-name: main;
   animation-iteration-count: infinite;
-  
-}
 
+}
+.btn{
+  color: #ECB01A;
+  animation-name: button;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  background-color: #7E494D;
+
+}
+@keyframes button {
+  from {
+    color: #ECB01A;
+  }
+  to {
+    color: #D9D008;
+  }
+}
 @keyframes main {
   from {
     background-color: #E48AA1;
